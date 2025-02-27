@@ -7,9 +7,13 @@ export default class Chat {
     this.websocket = null;
   }
 
-  init() {}
+  init() {
+    
+  }
 
-  bindToDOM() {}
+  bindToDOM() {
+
+  }
 
   registerEvents() {}
 
