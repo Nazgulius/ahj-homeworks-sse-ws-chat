@@ -8,26 +8,52 @@
   </head>
   <body>
     <div class="main">
-      <h1 class="title">Hello chat!</h1>
-      <div id="root"></div>
-      <div class="container">
-        <div class="chat__header">chat__header</div>
-        <div class="chat__connect">chat__connect</div>
-        <div class="chat__container">chat__container
-          <div class="chat__messages-container">chat__messages-container</div>
-        </div>
-        <div class="chat__area">chat__area</div>
-        <input class="chat__messages-input">chat__messages-input</input>
+      <!-- <h1 class="title">Hello chat!</h1> -->
+      <div id="root">
 
+
+        <div class="container">
+          <!-- <div class="chat__header">chat__header</div> -->
+          <div class="chat__userlist">
+            chat__userlist
+            <div class="chat__user">chat__user</div>
+          </div>
+
+          <div class="chat__area">chat__area
+            <div class="chat__container">chat__container
+              <div class="message__container">message__container
+                <div class="message__header">message__header</div>
+                <div class="message__container-yourself">message__container-yourself</div>
+              </div>
+              <div class="message__container">message__container
+                <div class="message__header">message__header</div>
+                <div class="message__container-interlocutor">message__container-interlocutor</div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="chat__messages-container">chat__messages-container
+            <input class="chat__messages-input">chat__messages-input</input>
+          </div>
+          
+        </div>
+
+        <div class="modal__background">modal__background
+          <div class="modal__content">modal__content
+            <h3 class="modal__header form__label">modal__header form__label</h3>
+            <input class="form__input">form__input</input>
+            <button class="chat__connect">chat__connect</button>
+            <!-- <div class="chat__connect">chat__connect</div> -->
+          </div>
+        </div>
       </div>
       
-
       
-        
-      </div>  
-
-    </div>
-   
+      
+    </div>  
+    
+  </div>
+  
 
     
   </body>

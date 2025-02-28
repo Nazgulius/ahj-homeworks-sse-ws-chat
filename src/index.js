@@ -1,3 +1,4 @@
-// Сюда импортируются файлы приложения
 import './css/style.css';
+import './css/modal.css';
+
 import './js/app';
