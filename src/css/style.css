@@ -20,6 +20,9 @@ h1 {
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+
   width: 60%;
   min-width: 500px;
   margin-left: auto;
@@ -40,6 +43,7 @@ h1 {
 .chat__connect {
   width: 150px;
   margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   padding: 10px 20px;
   text-align: center;
@@ -58,6 +62,7 @@ h1 {
   border: 1px solid #e2e5e9;
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
 }
@@ -79,6 +84,8 @@ h1 {
 
 .chat__messages-input {
   flex: 0 0 10%;
+  width: 100%;
+  height: auto;
   border-bottom-left-radius: 7px;
   padding-left: 10px;
   padding-right: 10px;
@@ -96,6 +103,7 @@ h1 {
 
 .chat__userlist {
   flex: 0 0 30%;
+  margin-bottom: auto;
   background-color: #edefec;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
