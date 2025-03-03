@@ -1,4 +1,3 @@
-
 // В этом классе вы будете реализовывать логику для вашего чата:
 export default class Chat {
   constructor(container) {

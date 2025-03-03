@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
-    <title>Chat</title>
-  </head>
-  <body>
-    <div class="main">
-      <!-- <h1 class="title">Hello chat!</h1> -->
-      <div id="root">
 
-        <div class="chat__header">Заголок чата</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Chat</title>
+</head>
 
-        <!-- содержание всего чата + лист участников -->
-        <div class="container"> 
-          
-          <!-- лист участников -->
-          <div class="chat__userlist">
-            <!-- Учатники: -->
-            <!-- <div class="chat__user">user 1</div>
+<body>
+  <div class="main">
+    <!-- <h1 class="title">Hello chat!</h1> -->
+    <div id="root">
+
+      <div class="chat__header">Чат для общения!</div>
+
+      <!-- содержание всего чата + лист участников -->
+      <div class="container">
+
+        <!-- лист участников -->
+        <div class="chat__userlist">
+          <!-- Учатники: -->
+          <!-- <div class="chat__user">user 1</div>
             <div class="chat__user">user 2</div>
             <div class="chat__user">user 3</div> -->
-          </div>
-          
-          <!-- область чата -->
-          <div class="chat__container">
-            <!-- сам чат -->
-            <div class="chat__area">
-            <div class="chat__messages-container">
-              <!-- сообщения чата -->
-              
+        </div> <!-- область чата -->
+        <div class="chat__container">
+          <div class="chat__area">
+            <div class="chat__messages-container"> <!-- сообщения чата -->
             </div>
           </div>
           <!-- область ввода сообщения -->
           <input class="chat__messages-input" placeholder="Введите сообщение">
-          </div>
         </div>
       </div>
+    </div>
 
-    </div> 
+  </div>
   </div>
 
   <!-- модальное окно -->
   <div class="modal__background"> <!-- фон - затемнение -->
-    <div class="modal__content">    <!-- окно для ввода имени участника -->
+    <div class="modal__content"> <!-- окно для ввода имени участника -->
       <h3 class="modal__header ">Введите ваше имя</h3>
       <input class="modal__input" placeholder="Ваше имя">
-      <button class="chat__connect">Начать чат</button>          
+      <button class="chat__connect">Начать чат</button>
     </div>
   </div>
 
-    
-  </body>
+
+</body>
+
 </html>
