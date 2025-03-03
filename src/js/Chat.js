@@ -30,12 +30,17 @@ export default class Chat {
   checkInactiveUsers() {
     // chek for LINT
     const now = Date.now();
-    this.userActivityMap.forEach((lastActiveTime, userName) => {
-      if (now - lastActiveTime > this.inactiveTimeout) {
-        this.userActivityMap.delete(userName); // Удаляем неактивного пользователя
-        this.removeUserFromList(userName); // Здесь вы должны реализовать функцию для удаления пользователя из UI
-      }
-    });
+    // Убедимся, что userActivityMap существует перед использованием forEach
+    if (this.userActivityMap) {
+      this.userActivityMap.forEach((lastActiveTime, userName) => {
+        if (now - lastActiveTime > this.inactiveTimeout) {
+          this.userActivityMap.delete(userName); // Удаляем неактивного пользователя
+          this.removeUserFromList(userName); // Удаляем пользователя из UI
+        }
+      });
+    } else {
+      console.error('method checkInactiveUsers() - userActivityMap is undefined');
+    }
   }
 
   subscribeOnEvents() {
